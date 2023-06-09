@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hangman Game</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Hangman Game</h1>
+    <nav>
+      <ul>
+        <li><a href="https://app.slack.com/client/T0195LMKD1R/D03T7H1Q5AP" target="_blank">Profile</a></li>
+        <li><a href="https://app.slack.com/client/T0195LMKD1R/D03T7H1Q5AP" target="_blank">About</a></li>
+        <li><a href="https://github.com" target="_blank">Connect with GitHub</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section>
+      <h2>Instructions</h2>
+      <p>Welcome to the Hangman game!</p>
+      <p>Try to guess the hidden word by suggesting letters. You have a limited number of attempts before the hangman is fully drawn. Good luck!</p>
+    </section>
+    
+    <section>
+      <h2>Game Screenshots</h2>
+      <div class="image-gallery">
+        <a href="#" onclick="openImage(event, '001.png')">
+          <img src="001.png" alt="Profile Image 1">
+        </a>
+        <a href="#" onclick="openImage(event, '002.png')">
+          <img src="002.png" alt="Profile Image 2">
+        </a>
+        <a href="#" onclick="openImage(event, '003.png')">
+          <img src="003.png" alt="Profile Image 3">
+        </a>
+        <a href="#" onclick="openImage(event, '004.png')">
+          <img src="004.png" alt="Profile Image 3">
+        </a>
+        <a href="#" onclick="openImage(event, '005.png')">
+          <img src="005.png" alt="Profile Image 3">
+        </a>
+        <a href="#" onclick="openImage(event, '006.png')">
+          <img src="006.png" alt="Profile Image 3">
+        </a>
+        <a href="#" onclick="openImage(event, '007.png')">
+          <img src="007.png" alt="Profile Image 3">
+        </a>
+      </div>
+    </section>
+    
+    <section>
+      <h2>Start Game</h2>
+      <p>Click the button below to start the Hangman game:</p>
+      <a href="game.html" class="start-button">Start Game</a>
+    </section>
+    
+    <section>
+      <h2>Multiplayer</h2>
+      <form action="game.html">
+        <label for="player1">Player 1:</label>
+        <input type="text" id="player1" name="player1" required>
+        
+        <label for="player2">Player 2:</label>
+        <input type="text" id="player2" name="player2" required>
+        
+        <input type="submit" value="Start Multiplayer Game">
+      </form>
+    </section>
+  </main>
+  
+  <footer>
+    <p>&copy; 2023 SteveBanks. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
